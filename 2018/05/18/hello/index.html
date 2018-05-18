@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="《深入理解Java虚拟机》读书笔记1 内存管理机制Java虚拟机内存模型包括程序计数器、虚拟机栈、本地方法栈、方法区、堆，如图所示Java虚拟机运行时内存模型1.1 程序计数器程序计数器是一块较小的内存空间，可以看作当前线程所执行的字节码行号指示器。需要注意以下几点内容：程序计数器是线程私有，各线程之间互不影响如果正在执行java方法，计数器记录的是正在执行的虚拟机字节码指令地址如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hello">
+<meta property="og:url" content="http://yoursite.com/2018/05/18/hello/index.html">
+<meta property="og:site_name" content="听雪歌">
+<meta property="og:description" content="《深入理解Java虚拟机》读书笔记1 内存管理机制Java虚拟机内存模型包括程序计数器、虚拟机栈、本地方法栈、方法区、堆，如图所示Java虚拟机运行时内存模型1.1 程序计数器程序计数器是一块较小的内存空间，可以看作当前线程所执行的字节码行号指示器。需要注意以下几点内容：程序计数器是线程私有，各线程之间互不影响如果正在执行java方法，计数器记录的是正在执行的虚拟机字节码指令地址如">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5916422-b4ee2e4fde89da96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/456">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5916422-11f1fc985f2b9bda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/380">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5916422-8064600b5ef69239.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/438">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5916422-e40f42d223ef0ba6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/666">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5916422-c5b711cfc151b78c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/566">
+<meta property="og:updated_time" content="2018-05-18T09:06:34.223Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hello">
+<meta name="twitter:description" content="《深入理解Java虚拟机》读书笔记1 内存管理机制Java虚拟机内存模型包括程序计数器、虚拟机栈、本地方法栈、方法区、堆，如图所示Java虚拟机运行时内存模型1.1 程序计数器程序计数器是一块较小的内存空间，可以看作当前线程所执行的字节码行号指示器。需要注意以下几点内容：程序计数器是线程私有，各线程之间互不影响如果正在执行java方法，计数器记录的是正在执行的虚拟机字节码指令地址如">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5916422-b4ee2e4fde89da96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/456">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/18/hello/"/>
+
+
+
+
+
+  <title>hello | 听雪歌</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">听雪歌</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">已过尘烟，空念明朝</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/18/hello/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tingxuege">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听雪歌">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hello</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-18T16:48:09+08:00">
+                2018-05-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="article"><br>        <h1 class="title">《深入理解Java虚拟机》读书笔记</h1><br><h2>1 内存管理机制</h2><br><p>Java虚拟机内存模型包括程序计数器、虚拟机栈、本地方法栈、方法区、堆，如图所示</p><br><div class="image-package"><br><div class="image-container" style="max-width: 456px; max-height: 283px; background-color: transparent;"><br><div class="image-container-fill" style="padding-bottom: 62.06%;"></div><br><div class="image-view" data-width="456" data-height="283"><img data-original-src="//upload-images.jianshu.io/upload_images/5916422-b4ee2e4fde89da96.png" data-original-width="456" data-original-height="283" data-original-format="image/png" data-original-filesize="124560" class="" src="//upload-images.jianshu.io/upload_images/5916422-b4ee2e4fde89da96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/456" style="cursor: zoom-in;"></div><br></div><br><div class="image-caption">Java虚拟机运行时内存模型</div><br></div><br><h3>1.1 程序计数器</h3><br><p>程序计数器是一块较小的内存空间，可以看作当前线程所执行的字节码行号指示器。需要注意以下几点内容：</p><br><ul><br><li>程序计数器是线程私有，各线程之间互不影响</li><br><li>如果正在执行java方法，计数器记录的是正在执行的虚拟机字节码指令地址</li><br><li>如果执行native方法，这个计数器为null</li><br><li>程序计数器也是在Java虚拟机规范中唯一没有规定任何OutOfMemoryError异常情况的区域</li><br></ul><br><h3>1.2 虚拟机栈</h3><br><p>虚拟机栈即我们平时经常说的栈内存，也是线程私有，是Java方法执行时的内存模型，每个方法在执行时都会创建一个栈帧用于储存以下内容：</p><br><ul><br><li><br><strong>局部变量表</strong>：32位变量槽，存放了编译期可知的各种基本数据类型、对象引用、returnAddress类型。</li><br><li><br><strong>操作数栈</strong>：基于栈的执行引擎，虚拟机把操作数栈作为它的工作区，大多数指令都要从这里弹出数据、执行运算，然后把结果压回操作数栈。</li><br><li><br><strong>动态连接</strong>：每个栈帧都包含一个指向运行时常量池（方法区的一部分）中该栈帧所属方法的引用。持有这个引用是为了支持方法调用过程中的动态连接。Class文件的常量池中有大量的符号引用，字节码中的方法调用指令就以常量池中指向方法的符号引用为参数。这些符号引用一部分会在类加载阶段或第一次使用的时候转化为直接引用，这种转化称为静态解析。另一部分将在每一次的运行期间转化为直接应用，这部分称为动态连接。</li><br><li><br><strong>方法出口</strong>：返回方法被调用的位置，恢复上层方法的局部变量和操作数栈，如果无返回值，则把它压入调用者的操作数栈。</li><br></ul><br><h3>1.3 本地方法栈</h3><br><p>本地方法栈是线程私有，与虚拟机栈类似，为native方法服务。</p><br><h3>1.4 方法区</h3><br><p>线程共享，用于储存已被虚拟机加载的类信息、常量、静态变量，即编译器编译后的代码，方法区也称<strong>持久代</strong>（Permanent Generation），主要存放java类定义信息，与垃圾回收关系不大，但不是没有垃圾回收，这个区域的内存回收目标主要是针对常量池的回收和对类型的卸载。<strong>运行时常量池</strong>，方法区的一部分，虚拟机加载Class后把常量池中的数据放入运行时常量池。</p><br><h3>1.5 堆</h3><br><p>堆是JVM中最大的一块区域，线程共享，此区唯一的目的就是存放对象实例，几乎所有对象实例都在这里分配，但是随着JIT编译器及逃逸分析技术的发展，栈上分配、标量替换优化技术将会导致一些微妙的变化，所有对象都分配在堆上也渐渐变的不是那么绝对。</p><br><ul><br><li><br><strong>新生代</strong>：包括Eden区、From Survivor区、To Survivor区，系统默认大小Eden:Survivor=8:1</li><br><li><br><strong>老年代</strong>：在年轻代中经历了N次垃圾回收后仍然存活的对象，就会被放到年老代中。因此，可以认为年老代中存放的都是一些生命周期较长的对象。</li><br></ul><br><h2>2 垃圾回收机制</h2><br><p>说起GC，大部分人都会把这项技术当作Java语言的产物，其实GC的历史比Java久远。GC中不外乎两个步骤：1.确定哪些是垃圾，2.进行垃圾回收</p><br><h3>2.1 对象已死的判定</h3><br><p>如何确定一个对象是否“死亡”？目前有两种方式：</p><br><ul><br><li><br><strong>引用计数算法</strong>，给对象添加一个计数器，每当有一个地方引用它时，计数器加1；当引用失效，计数器减1；计数器为0的对象就是不可能再被使用的。目前在微软的COM技术、Python语言都广泛使用该算法进行内存管理，但是至少主流的Java虚拟机没有选择该算法来管理内存对象，其中最主要原因是它无法解决对象之间的相互循环引用问题。</li><br><li><br><strong>可达性分析算法</strong>，基本思想就是通过一系列的称为“GC Roots”的对象作为起始点，从这些节点开始向下搜索，所走过的路径称为引用链，当一个对象到GC Roots没有任何引用链时，则证明此对象是不可用的。如图所示</li><br></ul><br><div class="image-package"><br><div class="image-container" style="max-width: 380px; max-height: 220px; background-color: transparent;"><br><div class="image-container-fill" style="padding-bottom: 57.89%;"></div><br><div class="image-view" data-width="380" data-height="220"><img data-original-src="//upload-images.jianshu.io/upload_images/5916422-11f1fc985f2b9bda.jpg" data-original-width="380" data-original-height="220" data-original-format="image/jpeg" data-original-filesize="7888" class="" src="//upload-images.jianshu.io/upload_images/5916422-11f1fc985f2b9bda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/380" style="cursor: zoom-in;"></div><br></div><br><div class="image-caption">可达性分析算法</div><br></div><br><h3>2.2 垃圾回收算法</h3><br><ul><br><li><br><strong>标记-清除算法</strong>，首先标记出所有需要回收的对象，然后进行统一的回收，不足之处有两个：效率低、碎片多。</li><br><li><br><strong>复制算法</strong>，将可用内存划分成大小相等的两块，每次只使用一块，当一块用完了，就将还存活的对象复制到另外一块上，然后把已使用的内存空间清理掉。不足之处是将内存缩小到一半，利用率不高。</li><br><li><br><strong>标记-整理算法</strong>，与标记-清除类似，但后续步骤不是直接对可回收对象进行清理，而是让所有存活对象都向一端移动，然后直接清理掉端边界以外的区域</li><br><li><br><strong>分代收集算法</strong>，分代收集是目前jvm普遍采用的算法，即新生代采用复制算法，因为有大量新生对象死去，只有少量存活；老年代采用标记-整理，因为老年代中对象存活率高，没有额外的空间对它进行担保。</li><br></ul><br><h3>2.3 垃圾回收器</h3><br><p>如果说垃圾回收算法是内存回收的方法论，那么垃圾收集器就是内存回收的实现。Java虚拟机规范中并没有对垃圾收集器应该如何实现作相应规定，因此不同厂商、不同版本差异很大。在HotSpot的发展过程中，有七种垃圾回收器，如图所示。在JDK1.7以后开始采用G1，本文重点分析G1垃圾回收器，对于其他垃圾回收器，读者可自行学习。</p><br><div class="image-package"><br><div class="image-container" style="max-width: 438px; max-height: 300px; background-color: transparent;"><br><div class="image-container-fill" style="padding-bottom: 68.49%;"></div><br><div class="image-view" data-width="438" data-height="300"><img data-original-src="//upload-images.jianshu.io/upload_images/5916422-8064600b5ef69239.jpg" data-original-width="438" data-original-height="300" data-original-format="image/jpeg" data-original-filesize="15264" class="" src="//upload-images.jianshu.io/upload_images/5916422-8064600b5ef69239.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/438" style="cursor: zoom-in;"></div><br></div><br><div class="image-caption">垃圾回收器</div><br></div><br><p>G1收集器将整个Java堆划分为多个大小相等的独立域（Region），虽然还保留新生代和老年代的概念，但新生代和老年代不再是物理隔离的了，它们都是一部分Region的集合。G1跟踪各个Region中垃圾堆积的价值大小（回收所获得的空间大小及回收所需时间的经验值），在后台维护一个优先列表，每次根据允许的收集时间，优先回收价值最大的Region。Region之间的对象引用以及其他垃圾回收器中的新生代与老年代之间的对象引用，虚拟机都是使用Remembered Set来避免全堆扫描的，G1中每个Region中都有一个与之对应的Remembered Set，虚拟机发现程序在对Reference类型的数据进行读写操作时，会产生一个Write Barrier暂时中断写操作，检查Reference引用的对象是否处于不同Region中，如果是，便通过CardTable把相关引用信息记录到被引用对象所属的Region的Remembered Set中。</p><br><h2>3 类加载机制</h2><br><h3>3.1 Class文件结构</h3><br><p>或许大部分程序员都还认为Java虚拟机执行Java程序是一件理所当然的和天经地义的事情，但是在Java发展之初，设计者就曾考虑过并实现了让其他语言运行在Java虚拟机之上的可能，他们在发布规范文档的时候，也刻意把Java的规范拆分成了<strong>Java语言规范</strong>和<strong>Java虚拟机规范</strong>。时至今日，商业和开源机构已经在Java语言之外发展出一大批在Java虚拟机上运行的语言，如Groovy、JRuby、Scala等。&lt;/br&gt;<br><br><strong><em>实现语言无关性的基础仍然是虚拟机和字节码存储格式，Java虚拟机不和任何语言绑定，它只与Class文件的二进制文件格式相关联，理论上讲，任一门功能性语言都可以表示为一个能被Java虚拟机所接受的有效的Class文件。</em></strong>&lt;/br&gt;</p><br><div class="image-package"><br><div class="image-container" style="max-width: 666px; max-height: 402px; background-color: transparent;"><br><div class="image-container-fill" style="padding-bottom: 60.36%;"></div><br><div class="image-view" data-width="666" data-height="402"><img data-original-src="//upload-images.jianshu.io/upload_images/5916422-e40f42d223ef0ba6.jpeg" data-original-width="666" data-original-height="402" data-original-format="image/jpeg" data-original-filesize="24301" class="" src="//upload-images.jianshu.io/upload_images/5916422-e40f42d223ef0ba6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/666" style="cursor: zoom-in;"></div><br></div><br><div class="image-caption">Java虚拟机与Class文件</div><br></div><br><p>Class文件结构包括以下内容：</p><br><ul><br><li>魔数：确定这个文件能否被Java虚拟机接受，值为0xCAFFBABE（咖啡宝贝？）</li><br><li>版本号：Class文件的版本号</li><br><li>常量池：Class文件的资源仓库</li><br><li>访问标志：用于识别一些类或者接口层次的访问信息，是类还是接口？是否为public？</li><br><li>索引集合：包括类索引、父类索引、接口索引</li><br><li>字段表集合：描述接口或类中声明的变量，但不包括方法内部的局部变量</li><br><li>方法表集合：代码在方法表中的属性集合“Code”属性</li><br><li>属性表集合：字段表、方法表都可以携带自己的属性表，以用于描述某些场景专用信息</li><br></ul><br><h3>3.2 类加载过程</h3><br><ul><br><li><p><strong>加载</strong><br><br>加载阶段虚拟机需要完成以下3件事：<br><br>(1) 通过一个类的全限定名来获取此类的二进制字节流<br><br>(2) 将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构<br><br>(3) 在内存中生成一个代表这个类的java.lang.Class对象，作为方法区这个类的各种数据的访问入口<br><br><strong><em>虚拟机这三点要求并不算具体，因此虚拟机实现与具体应用的灵活度都是相当大的。虚拟机设计团队在加载阶段搭建了一个相当开放的、广阔的舞台，Java发展历程中，充满创造力的开发人员玩出了各种花样，例如：</em></strong></p></li><br><li><p>从ZIP包中读取，最终成为日后的JAR、WAR格式基础</p></li><br><li><p>从网络中获取，典型应用就是Applet</p></li><br><li><p>运行时计算生成，这种场景使用最多的是动态代理技术</p></li><br><li><p>由其他文件生成，典型场景是JSP应用</p></li><br><li><p>从数据库中读取，使用较少</p></li><br><li><p><strong>验证</strong><br><br>目的是为了确保Class文件的字节流中包含的信息符合当前虚拟机的要求，并且不会危害虚拟机自身的安全。</p></li><br><li><p><strong>准备</strong><br><br>正式为类变量分配内存并设置类变量初始值的阶段，这些变量所使用的内存都将在方法区进行分配，注意是类变量（static修饰），不是实例变量。</p></li><br><li><p><strong>解析</strong><br><br>虚拟机将常量池内的符号引用替换为直接引用的过程，包括类或接口的解析、字段解析、类方法解析、接口方法解析。</p></li><br><li><p><strong>初始化</strong><br><br>初始化类和其他资源</p></li><br></ul><br><h3>3.3 类加载器</h3><br><p>类加载器用于实现类的加载动作，对于任意一个类，都需要由加载它的类加载器和这个类本省一同确立其在Java虚拟机中的唯一性，每个类加载器都有一个独立的类名称空间，比较两个类是否相等，只有在这两个类是同一个类加载器加载的前提下才有意义。，例如Class对象的equals()、isInstance()。<br><br>从Java开发人员的角度看，类加载器可划分为3种：</p><br><ul><br><li>启动类加载器，负责加载存放在&lt;JAVA_HOME&gt;\lib下面的类库</li><br><li>扩展类加载器，负责加载存放在&lt;JAVA_HOME&gt;\lib\ext下面的类库</li><br><li>应用程序类加载器，负责加载用户路径上的类库</li><br></ul><br><div class="image-package"><br><div class="image-container" style="max-width: 566px; max-height: 559px; background-color: transparent;"><br><div class="image-container-fill" style="padding-bottom: 98.76%;"></div><br><div class="image-view" data-width="566" data-height="559"><img data-original-src="//upload-images.jianshu.io/upload_images/5916422-c5b711cfc151b78c.jpeg" data-original-width="566" data-original-height="559" data-original-format="image/jpeg" data-original-filesize="21241" class="" src="//upload-images.jianshu.io/upload_images/5916422-c5b711cfc151b78c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/566" style="cursor: zoom-in;"></div><br></div><br><div class="image-caption">双亲委派模型</div><br></div><br><p><strong>双亲委派模型</strong>的工作过程是：如果一个类加载器收到了类加载请求，它首先不会自己去尝试加载这个类，而是把这个请求委派给父类加载器去加载，每一层次的类加载器都是如此，因此所有的加载请求最终都应传送到顶层的启动类加载器中，只有当父类加载器反馈自己无法完成这个加载请求时，子加载器才会尝试自己去加载。双亲委派模型并不是强制性约束，双亲委派模型出现过3次较大规模的“被破坏”情况，其中JNDI、Dubbo使用SPI技术就是对双亲委派模型的破坏，此外还有Java1.9中最大的特性OSGi也是对双亲委派的破坏，有兴趣的朋友可以扩展阅读。</p><br><h2>4 性能监控调优</h2><br><p>jvm启动参数</p><br><table><br><thead><br><tr><br><th>参数名称</th><br><th>说明</th><br></tr><br></thead><br><tbody><br><tr><br><td>-Xms</td><br><td>初始堆大小，物理内存的1/64(&lt;1GB)</td><br></tr><br><tr><br><td>-Xmx</td><br><td>最大堆大小，物理内存的1/4(&lt;1GB)</td><br></tr><br><tr><br><td>-Xmn</td><br><td>年轻代大小，此处的大小是（eden+ 2 survivor space)</td><br></tr><br><tr><br><td>-XX:PermSize</td><br><td>设置持久代初始值，物理内存的1/64</td><br></tr><br><tr><br><td>-XX:MaxPermSize</td><br><td>设置持久代最大值   物理内存的1/4</td><br></tr><br><tr><br><td>-Xss</td><br><td>每个线程的堆栈大小，JDK1.5以后为1M</td><br></tr><br><tr><br><td>-XX:NewRatio</td><br><td>年轻代(包括Eden和两个Survivor区)与年老代的比值</td><br></tr><br></tbody><br></table><br><p>性能优化四个命令：</p><br><ul><br><li>jps：查看java进程</li><br><li>jstat：显示本地或者远程虚拟机垃圾回收，例如：jstat -gcutil $pid 1000 5</li><br><li>jmap：查看JVM堆中对象详细占用情况，例如：jmap -histo [pid]</li><br><li>jstack：用于生成虚拟机当前线程快照，jstack -l [pid]</li><br></ul><br><p><strong>注：文中图片均来自网络</strong></p><br><br>          </div><br>        <br>    
+      
+    </div>
+    
+    
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------ending<i class="fa fa-paw"></i>waiting for you-------------</div>
+    
+</div>
+      
+    </div>
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/16/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/18/new/" rel="prev" title="new">
+                new <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">tingxuege</p>
+              <p class="site-description motion-element" itemprop="description">waiting for you</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tingxuege@outlook.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ting-xue-ge/answers" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">《深入理解Java虚拟机》读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">1 内存管理机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 程序计数器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 虚拟机栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 本地方法栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4 方法区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.5.</span> <span class="nav-text">1.5 堆</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">2 垃圾回收机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 对象已死的判定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 垃圾回收算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 垃圾回收器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">3 类加载机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 Class文件结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 类加载过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 类加载器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">4 性能监控调优</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">tingxuege</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
