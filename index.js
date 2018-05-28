@@ -22987,8 +22987,8 @@ function(e, t, n) {
     }), $e = he()(He, {
         href: "/"
     },
-    void 0, "\u542c\u96ea\u6b4c"), Qe = he()(We, {},
-    void 0, "\u5df2\u8fc7\u5c18\u70df \u7a7a\u5ff5\u660e\u671d"), Je = he()("i", {
+    void 0, "听雪歌"), Qe = he()(We, {},
+    void 0, "已过尘烟 空念明朝"), Je = he()("i", {
         className: "fa fa-university",
         "aria-hidden": "true"
     }), Xe = he()("span", {},
