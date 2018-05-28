@@ -22069,7 +22069,7 @@ function(e, t, n) {
             },
             {
                 icon: "university",
-                text: "University of Electronic Science and Technology of China (UESTC)"
+                text: "University of Electronic Science and Technology of China"
             },
             {
                 icon: "graduation-cap",
