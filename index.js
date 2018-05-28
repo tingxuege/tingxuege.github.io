@@ -21987,11 +21987,11 @@ function(e, t, n) {
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
         title: "\u8749\u6642",
         subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
-        posts: "https://api.github.com/repos/chanshiyucx/BlogPosts",
-        pages: "https://api.github.com/repos/chanshiyucx/BlogPages",
-        pre: "0ad1a0539c5b96fd18fa",
-        suf: "aaafba9c7d1362a5746c",
-        params: "creator=chanshiyucx&state=open",
+        posts: "https://api.github.com/repos/tingxuege/repo",
+        pages: "https://api.github.com/repos/tingxuege/shuoshuo",
+        pre: "4fefd6fd20643e96896d",
+        suf: "8d1f755addea22d63bcf",
+        params: "creator=tingxuege&state=open",
         gitalkOptions: {
             clientID: "655fdc97b211a9f4f4a9",
             clientSecret: "77867cd14723002397338fcb76d139b13bdec439",
@@ -22114,10 +22114,10 @@ function(e, t, n) {
         playerType: "file",
         playListId: "",
         playList: [{
-            name: "\u3046\u305f\u304b\u305f\u306e\u98ce\u3068\u8749\u65f6\u96e8",
-            author: "Little Planet",
+            name: "\u7ea2\u662d\u613f",
+            author: "\u97f3\u9619\u8bd7\u542c",
             src: "https://p1.music.126.net/24NNCkr1YPZYj3PGHjmQhg==/2051688697442345.mp3",
-            cover: "https://dn-coding-net-production-pp.qbox.me/b706547f-9237-48fb-ace9-89f9506ab099.jpg"
+            cover: "https://pic.xiami.net/images/album/img5/426705/4267051488426705.jpg?x-oss-process=image/resize,limit_0,m_pad,w_600,h_600"
         },
         {
             name: "\u6625\u306e\u51d1\u306b ~ Lost shiners",
@@ -23288,18 +23288,18 @@ function(e, t, n) {
         className: "fa fa-copyright",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "2017 - 2018")), he()(bn, {},
+    void 0, "2018")), he()(bn, {},
     void 0, he()("i", {
         className: "fa fa-heartbeat",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "\u8749\u6642\u96e8"))), he()(yn, {},
+    void 0, "\u542c\u96ea\u6b4c"))), he()(yn, {},
     void 0, he()(bn, {},
     void 0, he()("p", {},
-    void 0, "Theme - ", he()("a", {
-        href: "https://github.com/chanshiyucx/SPA-Blog"
+    void 0, "Zhihu - ", he()("a", {
+        href: "https://www.zhihu.com/people/ting-xue-ge/activities"
     },
-    void 0, "HeartBeat"))), "|", he()(bn, {},
+    void 0, "HomePage"))), "|", he()(bn, {},
     void 0, he()("p", {},
     void 0, "Hosted by ", he()("a", {
         href: "https://pages.coding.me"
