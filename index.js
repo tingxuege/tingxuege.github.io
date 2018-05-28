@@ -23456,7 +23456,7 @@ function(e, t, n) {
                     initLoad: !0
                 }),
                 this.showTips({
-                    initTips: "\u6b22\u8fce\u6765\u5230<font color="#3333ff"> \u542c\u96ea\u6b4c </font>\u5bd2\u820d\u7b80\u964b \u541b\u8bf7\u81ea\u4fbf"
+                    initTips: "\u6b22\u8fce\u6765\u5230<font color=#3333ff> \u542c\u96ea\u6b4c </font>\u5bd2\u820d\u7b80\u964b \u541b\u8bf7\u81ea\u4fbf"
                 }),
                 window.$("body").backstretch(qt.bgImg, qt.bgOptions),
                 this.skPlayer = new _t.a({
