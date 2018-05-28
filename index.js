@@ -22988,7 +22988,7 @@ function(e, t, n) {
         href: "/"
     },
     void 0, "\u8749\u6642\u96e8"), Qe = he()(We, {},
-    void 0, "\u8749\u9e23\u5982\u96e8 \u82b1\u5bb5\u9053\u4e2d"), Je = he()("i", {
+    void 0, "\u8749\u9e23\u5982\u96e8"), Je = he()("i", {
         className: "fa fa-university",
         "aria-hidden": "true"
     }), Xe = he()("span", {},
