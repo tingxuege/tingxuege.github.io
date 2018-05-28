@@ -21987,11 +21987,11 @@ function(e, t, n) {
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
         title: "\u8749\u6642",
         subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
-        posts: "https://api.github.com/repos/chanshiyucx/BlogPosts",
-        pages: "https://api.github.com/repos/chanshiyucx/BlogPages",
-        pre: "0ad1a0539c5b96fd18fa",
-        suf: "aaafba9c7d1362a5746c",
-        params: "creator=chanshiyucx&state=open",
+        posts: "https://api.github.com/repos/tingxuege/repo",
+        pages: "https://api.github.com/repos/tingxuege/shuoshuo",
+        pre: "4fefd6fd20643e96896d",
+        suf: "8d1f755addea22d63bcf",
+        params: "creator=tingxuege&state=open",
         gitalkOptions: {
             clientID: "655fdc97b211a9f4f4a9",
             clientSecret: "77867cd14723002397338fcb76d139b13bdec439",
@@ -22001,8 +22001,8 @@ function(e, t, n) {
             distractionFreeMode: !1
         },
         leancloud: {
-            appId: "gpbQXGSvwOMTfL6lj5aWUMAA-gzGzoHsz",
-            appKey: "avh1gAX4lKkcQQMa1EReztCt"
+            appId: "dlg1hJTPVuCEg30b9cUdEV8G-gzGzoHsz",
+            appKey: "u1383fJbsU24wYD0gfMWkzOS"
         },
         qoutes: {
             archives: "\u6587\u7ae0\u5343\u53e4\u4e8b\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
