@@ -21988,7 +21988,7 @@ function(e, t, n) {
         title: "\u8749\u6642",
         subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
         posts: "https://api.github.com/repos/tingxuege/repo",
-        pages: "https://api.github.com/repos/tingxuege/others",
+        pages: "https://api.github.com/repos/tingxuege/shuoshuo",
         pre: "4fefd6fd20643e96896d",
         suf: "8d1f755addea22d63bcf",
         params: "creator=tingxuege&state=open",
