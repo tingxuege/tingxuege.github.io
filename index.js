@@ -22001,8 +22001,8 @@ function(e, t, n) {
             distractionFreeMode: !1
         },
         leancloud: {
-            appId: "gpbQXGSvwOMTfL6lj5aWUMAA-gzGzoHsz",
-            appKey: "avh1gAX4lKkcQQMa1EReztCt"
+            appId: "dlg1hJTPVuCEg30b9cUdEV8G-gzGzoHsz",
+            appKey: "u1383fJbsU24wYD0gfMWkzOS"
         },
         qoutes: {
             archives: "\u6587\u7ae0\u5343\u53e4\u4e8b\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
