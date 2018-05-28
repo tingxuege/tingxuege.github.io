@@ -22065,7 +22065,7 @@ function(e, t, n) {
             },
             {
                 icon: "envira",
-                text: "\u8749\u9e23\u5982"
+                text: "已过尘烟"
             },
             {
                 icon: "university",
