@@ -22084,9 +22084,9 @@ function(e, t, n) {
             type: "\u5fae\u4fe1",
             qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
         }],
-        loadingImg: "http://www.zcool.com.cn/work/ZMjQ2MjAwOTY=.html?switchPage=on",
+        loadingImg: "",
         duration: 700,
-        minDelay: 1200,
+        minDelay: 0,
         transitions: {
             home: {
                 show: "scale-in",
