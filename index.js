@@ -22065,15 +22065,15 @@ function(e, t, n) {
             },
             {
                 icon: "envira",
-                text: "已过尘烟"
+                text: "\u826f\u8fb0\u597d\u666f \u5bc2\u5bde\u5982\u96ea"
             },
             {
                 icon: "university",
-                text: "University of Electronic Science and Technology of China"
+                text: "Zhejiang University"
             },
             {
                 icon: "graduation-cap",
-                text: "Communication&Information Engineering"
+                text: "Software Engineering"
             }]
         },
         reward: [{
@@ -22084,7 +22084,7 @@ function(e, t, n) {
             type: "\u5fae\u4fe1",
             qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
         }],
-        loadingImg: "https://dn-coding-net-production-pp.qbox.me/06b36bf5-4fda-4afb-afcb-80700df05834.gif",
+        loadingImg: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527591947924&di=e0c3f27d12641f27933ad408735de9fa&imgtype=0&src=http%3A%2F%2Fpic.962.net%2Fup%2F2016-12%2F14821185319652662.gif",
         duration: 700,
         minDelay: 1200,
         transitions: {
