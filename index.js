@@ -22084,7 +22084,7 @@ function(e, t, n) {
             type: "\u5fae\u4fe1",
             qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
         }],
-        loadingImg: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527591947924&di=e0c3f27d12641f27933ad408735de9fa&imgtype=0&src=http%3A%2F%2Fpic.962.net%2Fup%2F2016-12%2F14821185319652662.gif",
+        loadingImg: "https://sh-btfs-yun-ftn.weiyun.com/ftn_handler/276db0073f26e88dcf1e22081bc40512b8960098d3ca102156502a18203ef550e810f30da499a1ed41364224be1c10e5c4f14ebcba3e4cea75728767d464df35/20180529162508.gif?fname=20180529162508.gif&from=30013&version=3.3.3.3&uin=1159408006",
         duration: 700,
         minDelay: 1200,
         transitions: {
