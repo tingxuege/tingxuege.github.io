@@ -22084,7 +22084,7 @@ function(e, t, n) {
             type: "\u5fae\u4fe1",
             qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
         }],
-        loadingImg: "https://sh-btfs-yun-ftn.weiyun.com/ftn_handler/276db0073f26e88dcf1e22081bc40512b8960098d3ca102156502a18203ef550e810f30da499a1ed41364224be1c10e5c4f14ebcba3e4cea75728767d464df35/20180529162508.gif?fname=20180529162508.gif&from=30013&version=3.3.3.3&uin=1159408006",
+        loadingImg: "https://tjmail-yun-ftn.weiyun.com/ftn_handler/240a9072c933601bdc40452e566fe276088d69f657435efecf25577cff3b91429ae6503556a0a05d5885646d4e213af2a81000cfb360d794c6b353462af0297a/20180529162901.gif?fname=20180529162901.gif&from=30013&version=3.3.3.3&uin=1159408006",
         duration: 700,
         minDelay: 1200,
         transitions: {
