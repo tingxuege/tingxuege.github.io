@@ -21985,13 +21985,13 @@ function(e, t, n) {
         value: !0
     });
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
-        title: "\u8749\u6642\u96e8",
+        title: "\u8749\u6642",
         subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
-        posts: "https://api.github.com/repos/chanshiyucx/BlogPosts",
-        pages: "https://api.github.com/repos/chanshiyucx/BlogPages",
-        pre: "0ad1a0539c5b96fd18fa",
-        suf: "aaafba9c7d1362a5746c",
-        params: "creator=chanshiyucx&state=open",
+        posts: "https://api.github.com/repos/tingxuege/repo",
+        pages: "https://api.github.com/repos/tingxuege/shuoshuo",
+        pre: "4fefd6fd20643e96896d",
+        suf: "8d1f755addea22d63bcf",
+        params: "creator=tingxuege&state=open",
         gitalkOptions: {
             clientID: "655fdc97b211a9f4f4a9",
             clientSecret: "77867cd14723002397338fcb76d139b13bdec439",
@@ -22001,8 +22001,8 @@ function(e, t, n) {
             distractionFreeMode: !1
         },
         leancloud: {
-            appId: "gpbQXGSvwOMTfL6lj5aWUMAA-gzGzoHsz",
-            appKey: "avh1gAX4lKkcQQMa1EReztCt"
+            appId: "dlg1hJTPVuCEg30b9cUdEV8G-gzGzoHsz",
+            appKey: "u1383fJbsU24wYD0gfMWkzOS"
         },
         qoutes: {
             archives: "\u6587\u7ae0\u5343\u53e4\u4e8b\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
@@ -22065,11 +22065,11 @@ function(e, t, n) {
             },
             {
                 icon: "envira",
-                text: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d"
+                text: "已过尘烟"
             },
             {
                 icon: "university",
-                text: "University of Electronic Science and Technology of China (UESTC)"
+                text: "University of Electronic Science and Technology of China"
             },
             {
                 icon: "graduation-cap",
@@ -22114,10 +22114,10 @@ function(e, t, n) {
         playerType: "file",
         playListId: "",
         playList: [{
-            name: "\u3046\u305f\u304b\u305f\u306e\u98ce\u3068\u8749\u65f6\u96e8",
-            author: "Little Planet",
+            name: "\u7ea2\u662d\u613f",
+            author: "\u97f3\u9619\u8bd7\u542c",
             src: "https://p1.music.126.net/24NNCkr1YPZYj3PGHjmQhg==/2051688697442345.mp3",
-            cover: "https://dn-coding-net-production-pp.qbox.me/b706547f-9237-48fb-ace9-89f9506ab099.jpg"
+            cover: "https://pic.xiami.net/images/album/img5/426705/4267051488426705.jpg?x-oss-process=image/resize,limit_0,m_pad,w_600,h_600"
         },
         {
             name: "\u6625\u306e\u51d1\u306b ~ Lost shiners",
@@ -22987,8 +22987,8 @@ function(e, t, n) {
     }), $e = he()(He, {
         href: "/"
     },
-    void 0, "\u8749\u6642\u96e8"), Qe = he()(We, {},
-    void 0, "\u8749\u9e23\u5982\u96e8 \u82b1\u5bb5\u9053\u4e2d"), Je = he()("i", {
+    void 0, "听雪歌"), Qe = he()(We, {},
+    void 0, "已过尘烟 空念明朝"), Je = he()("i", {
         className: "fa fa-university",
         "aria-hidden": "true"
     }), Xe = he()("span", {},
@@ -23154,21 +23154,21 @@ function(e, t, n) {
     }
     var on = Object(be.b)(kt, Zt),
     an = {
-        backHome: "\u56de\u9996\u9875\u770b\u770b\u5427 o(*\uffe3\u25bd\uffe3*)\u30d6",
-        dressup: "\u8981\u770b\u770b\u6211\u7684\u65b0\u8863\u670d\u561b (\u25cf'\u25e1'\u25cf)",
-        takePhoto: "\u8981\u7ed9\u6211\u62cd\u5f20\u7167\u561b\uff08<\u309d\u03c9\u30fb\uff09\u2606",
-        talk: "\u8981\u542c\u6211\u8bb2\u6545\u4e8b\u4e48 \u0e05\u25cf\u03c9\u25cf\u0e05",
-        lightbulb: "\u6df1\u591c\u6ce8\u610f\u7231\u62a4\u773c\u775b\u54e6 (\u272a\u03c9\u272a)",
+        backHome: "\u70b9\u6211\u56de\u9996\u9875\u770b\u770b\u5427",
+        dressup: "\u4f60\u7684\u5fc3\u4e2d \u662f\u5426\u4e5f\u4f4f\u7740\u4e00\u4e2a\u4eba\uff1f",
+        takePhoto: "\u4e0e\u541b\u521d\u76f8\u8bc6 \u72b9\u5982\u6545\u4eba\u5f52",
+        talk: "\u6d6e\u751f\u5025\u506c \u6709\u7f18\u840d\u805a \u5f53\u6d6e\u4e00\u5927\u767d",
+        lightbulb: "\u5f80\u4e8b\u83ab\u8ffd\u6211\u4e86\u89e3 \u6211\u7b49\u65f6\u95f4\u60ed\u6127",
         info: "\u8981\u4e86\u89e3\u66f4\u591a\u5173\u4e8e\u6211\u7684\u6545\u4e8b\u4e48 (*\xb4\u2200`)~\u2665",
-        hidden: "\u5230\u4e86\u8bf4\u518d\u89c1\u7684\u65f6\u5019\u4e86\u4e48 (\uff61\u014f_\u014f)",
-        music: "\u6765\u542c\u542c\u6b4c\u5427 \u266a(^\u2207^*)",
-        scroll: "\u5530\u5730\u4e00\u4e0b\u5c31\u8dd1\u4e0a\u9762\u53bb\u4e86\u54e6 ( \u2022 \u0300\u03c9\u2022\u0301 )"
+        hidden: "\u5230\u4e86\u8bf4\u518d\u89c1\u7684\u65f6\u5019\u4e86\u4e48",
+        music: "\u5728\u4e0b\u7684\u6b4c\u5355 \u53ef\u5408\u4f60\u5fc3\u610f\uff1f",
+        scroll: "\u8fd9\u662f\u4e2a\u795e\u5947\u7684\u6eda\u52a8\u6761\u54e6"
     },
     sn = {
-        dressup: "\u6211\u7684\u65b0\u8863\u670d\u6f02\u4eae\u4e48 (\u25cf'\u25e1'\u25cf)",
-        takePhoto: "\u6211\u7684\u7167\u7247\u8981\u597d\u597d\u6536\u85cf\u54e6\uff08<\u309d\u03c9\u30fb\uff09\u2606",
-        lightbulb: "\u4e00\u8d77\u6765\u505a\u773c\u4fdd\u5065\u64cd\u5427 (\uff89\u25d5\u2200\u25d5)\uff89*:\uff65\uff9f\u2727",
-        hidden: "\u4eba\u751f\u82e5\u53ea\u5982\u521d\u89c1\uff0c\u548c\u4f60\u5728\u4e00\u8d77\u7684\u8fd9\u6bb5\u65f6\u95f4\u5f88\u5f00\u5fc3 (\u25b0\u02d8\u25e1\u02d8\u25b0)"
+        dressup: "\u4f60\u7684\u5fc3\u4e2d \u662f\u5426\u4e5f\u4f4f\u7740\u4e00\u4e2a\u4eba\uff1f",
+        takePhoto: "\u5929\u6daf\u660e\u6708\u65b0 \u671d\u66ae\u6700\u76f8\u601d",
+        lightbulb: "\u4eca\u65e5\u4e3a\u541b\u6b4c\u4e00\u66f2 \u6682\u51ed\u676f\u9152\u957f\u7cbe\u795e",
+        hidden: "\u4eba\u751f\u82e5\u53ea\u5982\u521d\u89c1\uff0c\u548c\u4f60\u5728\u4e00\u8d77\u7684\u8fd9\u6bb5\u65f6\u95f4\u5f88\u5f00\u5fc3"
     },
     un = be.a.div(Et,
     function(e) {
@@ -23288,18 +23288,18 @@ function(e, t, n) {
         className: "fa fa-copyright",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "2017 - 2018")), he()(bn, {},
+    void 0, "2018")), he()(bn, {},
     void 0, he()("i", {
         className: "fa fa-heartbeat",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "\u8749\u6642\u96e8"))), he()(yn, {},
+    void 0, "\u542c\u96ea\u6b4c"))), he()(yn, {},
     void 0, he()(bn, {},
     void 0, he()("p", {},
-    void 0, "Theme - ", he()("a", {
-        href: "https://github.com/chanshiyucx/SPA-Blog"
+    void 0, "Zhihu - ", he()("a", {
+        href: "https://www.zhihu.com/people/ting-xue-ge/activities"
     },
-    void 0, "HeartBeat"))), "|", he()(bn, {},
+    void 0, "HomePage"))), "|", he()(bn, {},
     void 0, he()("p", {},
     void 0, "Hosted by ", he()("a", {
         href: "https://pages.coding.me"
@@ -23456,7 +23456,7 @@ function(e, t, n) {
                     initLoad: !0
                 }),
                 this.showTips({
-                    initTips: "\u6b22\u8fce\u6765\u5230<font color=#f6f> \u8749\u6642\u96e8 </font>\uff0c\u4eca\u5929\u4e5f\u8981\u5143\u6c14\u6ee1\u6ee1\u54e6\uff01"
+                    initTips: "\u6b22\u8fce\u6765\u5230<font color=#3333ff> \u542c\u96ea\u6b4c </font>\u5bd2\u820d\u7b80\u964b \u541b\u8bf7\u81ea\u4fbf"
                 }),
                 window.$("body").backstretch(qt.bgImg, qt.bgOptions),
                 this.skPlayer = new _t.a({
