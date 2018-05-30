@@ -22082,7 +22082,7 @@ function(e, t, n) {
         },
         {
             type: "\u5fae\u4fe1",
-            qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
+            qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/WechatTipping.jpeg"
         }],
         loadingImg: "",
         duration: 700,
