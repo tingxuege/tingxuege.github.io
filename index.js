@@ -21993,11 +21993,11 @@ function(e, t, n) {
         suf: "8d1f755addea22d63bcf",
         params: "creator=tingxuege&state=open",
         gitalkOptions: {
-            clientID: "655fdc97b211a9f4f4a9",
-            clientSecret: "77867cd14723002397338fcb76d139b13bdec439",
+            clientID: "c14279f33b350ccaca33",
+            clientSecret: "72a8e008022300c06cab3adcce7b931a4cd332ad",
             repo: "BlogComments",
-            owner: "chanshiyucx",
-            admin: ["chanshiyucx"],
+            owner: "tingxuege",
+            admin: ["tingxuege"],
             distractionFreeMode: !1
         },
         leancloud: {
