@@ -22078,7 +22078,7 @@ function(e, t, n) {
         },
         reward: [{
             type: "\u652f\u4ed8\u5b9d",
-            qr: "https://dn-coding-net-production-pp.qbox.me/b8fd74b0-e563-4aa5-9d49-09f459b9afee.png"
+            qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/AliPayTipping.jpeg"
         },
         {
             type: "\u5fae\u4fe1",
