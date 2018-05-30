@@ -22014,33 +22014,33 @@ function(e, t, n) {
             about: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d"
         },
         catsInfo: [{
-            name: "\u4e8b\u4ef6\u7c3f",
-            text: "\u4eca\u5929\u53c8\u662f\u548c\u5e73\u7684\u4e00\u5929~",
+            name: "\u77f3\u6c89\u6eaa\u6d1e",
+            text: "\u83ab\u602a\u65e0\u5fc3\u604b\u6e05\u5883 \u5df2\u5c06\u4e66\u5251\u8bb8\u660e\u65f6",
             img: "https://dn-coding-net-production-pp.qbox.me/ccde131b-2030-480c-9ae6-47864ec7b7a6.jpg"
         },
         {
-            name: "\u6280\u672f\u5411",
-            text: "\u6280\u672f\u4ec0\u4e48\u7684\u4e0d\u61c2\u5566",
+            name: "\u6e05\u98ce\u6da7",
+            text: "\u6211\u4fbf\u5728\u8fd9\u91cc\u800c\u5df2",
             img: "https://dn-coding-net-production-pp.qbox.me/40c9bd4d-e39a-436d-836d-152d5e8a0dee.jpg"
         },
         {
-            name: "\u7b14\u8bb0\u672c",
-            text: "emmmmmm",
+            name: "\u9189\u82b1\u836b",
+            text: "\u77e5\u8db3\u5e38\u4e50",
             img: "https://dn-coding-net-production-pp.qbox.me/5b558b08-5f3a-4e53-a5bd-24ce7a6a2213.jpg"
         },
         {
-            name: "\u4ee3\u7801\u5e93",
-            text: "Write the code, Change the World",
+            name: "\u7434\u5ddd",
+            text: "\u6b64\u523b\u7e41\u76db \u4e0d\u89c1\u51cb\u96f6",
             img: "https://dn-coding-net-production-pp.qbox.me/aa42635d-caa9-47a5-bd52-92e568d2eef7.jpg"
         },
         {
-            name: "\u5206\u4eab\u5883",
-            text: "\u5077\u5077\u7ed9\u4f60\u770b\u70b9\u4e1c\u897f",
+            name: "\u53f8\u4e91\u5d16",
+            text: "\u604d\u604d\u4e00\u68a6\u5343\u5e74",
             img: "https://dn-coding-net-production-pp.qbox.me/3f9966dd-cd17-44fe-a476-2cd0d873d0ac.jpg"
         },
         {
-            name: "\u81ea\u8a00\u8bed",
-            text: "\u6b32\u8a00\u53c8\u6b62\uff0c\u6b62\u8a00\u53c8\u6b32",
+            name: "\u5251\u51a2",
+            text: "Talk is cheap,shou me the code.",
             img: "https://dn-coding-net-production-pp.qbox.me/cc4c43fe-3a0a-436f-a942-fed34bbb8748.jpg"
         }],
         booksOptions: {
@@ -22988,8 +22988,8 @@ function(e, t, n) {
     }), $e = he()(He, {
         href: "/"
     },
-    void 0, "听雪歌"), Qe = he()(We, {},
-    void 0, "已过尘烟 空念明朝"), Je = he()("i", {
+    void 0, "\u542c\u96ea\u6b4c"), Qe = he()(We, {},
+    void 0, "\u5df2\u8fc7\u5c18\u70df \u7a7a\u5ff5\u660e\u671d"), Je = he()("i", {
         className: "fa fa-university",
         "aria-hidden": "true"
     }), Xe = he()("span", {},
