@@ -22103,7 +22103,9 @@ function(e, t, n) {
             }
         },
         backstretch: {
-            bgImg: ["http://i2.bvimg.com/635857/4a84918d739730c1.jpg", 
+            bgImg: [
+            //"http://i2.bvimg.com/635857/4a84918d739730c1.jpg", 
+            "https://dn-coding-net-production-pp.qbox.me/8f0ada95-fa8e-41a0-a6cf-a3d54dfd29fb.jpg",
             "https://dn-coding-net-production-pp.qbox.me/8f0ada95-fa8e-41a0-a6cf-a3d54dfd29fb.jpg"],
             bgOptions: {
                 duration: 1e4,
