@@ -22085,8 +22085,8 @@ function(e, t, n) {
             qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/WechatTipping.jpeg"
         }],
         loadingImg: "",
-        duration: 100,
-        minDelay: 700,
+        duration: 700,
+        minDelay: 1200,
         transitions: {
             home: {
                 show: "scale-in",
