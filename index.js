@@ -22084,9 +22084,9 @@ function(e, t, n) {
             type: "\u5fae\u4fe1",
             qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/WechatTipping.jpeg"
         }],
-        loadingImg: "",
+        loadingImg: "https://dn-coding-net-production-pp.qbox.me/06b36bf5-4fda-4afb-afcb-80700df05834.gif",
         duration: 200,
-        minDelay: 300,
+        minDelay: 500,
         transitions: {
             home: {
                 show: "scale-in",
