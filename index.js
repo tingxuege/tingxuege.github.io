@@ -21985,62 +21985,62 @@ function(e, t, n) {
         value: !0
     });
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
-        title: "\u8749\u6642\u96e8",
-        subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
-        posts: "https://api.github.com/repos/tingxuege/repo",
-        pages: "https://api.github.com/repos/tingxuege/shuoshuo",
-        pre: "4fefd6fd20643e96896d",
-        suf: "8d1f755addea22d63bcf",
-        params: "creator=tingxuege&state=open",
+        title: "\u542c\u96ea\u6b4c",
+        subtitle: "\u5df2\u8fc7\u5c18\u70df \u7a7a\u5ff5\u660e\u671d",
+        posts: "https://api.github.com/repos/chanshiyucx/BlogPosts",
+        pages: "https://api.github.com/repos/chanshiyucx/BlogPages",
+        pre: "0ad1a0539c5b96fd18fa",
+        suf: "aaafba9c7d1362a5746c",
+        params: "creator=chanshiyucx&state=open",
         gitalkOptions: {
-            clientID: "c14279f33b350ccaca33",
-            clientSecret: "72a8e008022300c06cab3adcce7b931a4cd332ad",
+            clientID: "655fdc97b211a9f4f4a9",
+            clientSecret: "77867cd14723002397338fcb76d139b13bdec439",
             repo: "BlogComments",
-            owner: "tingxuege",
-            admin: ["tingxuege"],
+            owner: "chanshiyucx",
+            admin: ["chanshiyucx"],
             distractionFreeMode: !1
         },
         leancloud: {
-            appId: "dlg1hJTPVuCEg30b9cUdEV8G-gzGzoHsz",
-            appKey: "u1383fJbsU24wYD0gfMWkzOS"
+            appId: "gpbQXGSvwOMTfL6lj5aWUMAA-gzGzoHsz",
+            appKey: "avh1gAX4lKkcQQMa1EReztCt"
         },
         qoutes: {
-            archives: "\u6587\u7ae0\u5343\u53e4\u4e8b\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
+            archives: "\u6587\u7ae0\u5343\u53e4\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
             categories: "\u884c\u4e91\u6d41\u6c34\uff0c\u843d\u7b14\u751f\u82b1",
             tags: "\u5217\u5352\u5468\u531d\uff0c\u661f\u7f57\u4e91\u5e03",
             books: "\u543e\u751f\u4e5f\u6709\u6daf\uff0c\u800c\u77e5\u4e5f\u65e0\u6daf",
             shuoshuo: "\u6b32\u8a00\u53c8\u6b62\uff0c\u6b62\u8a00\u53c8\u6b32",
             friends: "\u83ab\u6101\u524d\u8def\u65e0\u77e5\u5df1\uff0c\u5929\u4e0b\u8c01\u4eba\u4e0d\u8bc6\u541b",
-            about: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d"
+            about: "\u5df2\u8fc7\u5c18\u70df\uff0c\u7a7a\u5ff5\u660e\u671d"
         },
         catsInfo: [{
-            name: "\u77f3\u6c89\u6eaa\u6d1e",
-            text: "\u83ab\u602a\u65e0\u5fc3\u604b\u6e05\u5883 \u5df2\u5c06\u4e66\u5251\u8bb8\u660e\u65f6",
+            name: "\u4e8b\u4ef6\u7c3f",
+            text: "\u4eca\u5929\u53c8\u662f\u548c\u5e73\u7684\u4e00\u5929~",
             img: "https://dn-coding-net-production-pp.qbox.me/ccde131b-2030-480c-9ae6-47864ec7b7a6.jpg"
         },
         {
-            name: "\u6e05\u98ce\u6da7",
-            text: "\u6211\u4fbf\u5728\u8fd9\u91cc\u800c\u5df2",
+            name: "\u6280\u672f\u5411",
+            text: "\u6280\u672f\u4ec0\u4e48\u7684\u4e0d\u61c2\u5566",
             img: "https://dn-coding-net-production-pp.qbox.me/40c9bd4d-e39a-436d-836d-152d5e8a0dee.jpg"
         },
         {
-            name: "\u9189\u82b1\u836b",
-            text: "\u77e5\u8db3\u5e38\u4e50",
+            name: "\u7b14\u8bb0\u672c",
+            text: "emmmmmm",
             img: "https://dn-coding-net-production-pp.qbox.me/5b558b08-5f3a-4e53-a5bd-24ce7a6a2213.jpg"
         },
         {
-            name: "\u7434\u5ddd",
-            text: "\u6b64\u523b\u7e41\u76db \u4e0d\u89c1\u51cb\u96f6",
+            name: "\u4ee3\u7801\u5e93",
+            text: "Write the code, Change the World",
             img: "https://dn-coding-net-production-pp.qbox.me/aa42635d-caa9-47a5-bd52-92e568d2eef7.jpg"
         },
         {
-            name: "\u53f8\u4e91\u5d16",
-            text: "\u604d\u604d\u4e00\u68a6\u5343\u5e74",
+            name: "\u5206\u4eab\u5883",
+            text: "\u5077\u5077\u7ed9\u4f60\u770b\u70b9\u4e1c\u897f",
             img: "https://dn-coding-net-production-pp.qbox.me/3f9966dd-cd17-44fe-a476-2cd0d873d0ac.jpg"
         },
         {
-            name: "\u5251\u51a2",
-            text: "Talk is cheap,shou me the code.",
+            name: "\u81ea\u8a00\u8bed",
+            text: "\u6b32\u8a00\u53c8\u6b62\uff0c\u6b62\u8a00\u53c8\u6b32",
             img: "https://dn-coding-net-production-pp.qbox.me/cc4c43fe-3a0a-436f-a942-fed34bbb8748.jpg"
         }],
         booksOptions: {
@@ -22061,11 +22061,11 @@ function(e, t, n) {
             avatar: "https://dn-coding-net-production-pp.qbox.me/2af1a90f-4b60-4abd-a7b3-a64a903aa921.png",
             info: [{
                 icon: "user",
-                text: "\u8749\u6642\u96e8"
+                text: "\u542c\u96ea\u6b4c"
             },
             {
                 icon: "envira",
-                text: "\u826f\u8fb0\u597d\u666f \u5bc2\u5bde\u5982\u96ea"
+                text: "\u5df2\u8fc7\u5c18\u70df\uff0c\u7a7a\u5ff5\u660e\u671d"
             },
             {
                 icon: "university",
@@ -22078,13 +22078,13 @@ function(e, t, n) {
         },
         reward: [{
             type: "\u652f\u4ed8\u5b9d",
-            qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/AliPayTipping.jpeg"
+            qr: "https://dn-coding-net-production-pp.qbox.me/b8fd74b0-e563-4aa5-9d49-09f459b9afee.png"
         },
         {
             type: "\u5fae\u4fe1",
-            qr: "http://p9ivnd5og.bkt.clouddn.com/image/tippingcode/WechatTipping.jpeg"
+            qr: "https://dn-coding-net-production-pp.qbox.me/9ba82f12-1eb9-4593-89df-f827de4bc0e7.png"
         }],
-        loadingImg: "",
+        loadingImg: "https://dn-coding-net-production-pp.qbox.me/06b36bf5-4fda-4afb-afcb-80700df05834.gif",
         duration: 700,
         minDelay: 1200,
         transitions: {
@@ -22103,10 +22103,7 @@ function(e, t, n) {
             }
         },
         backstretch: {
-            bgImg: [
-            //"http://i2.bvimg.com/635857/4a84918d739730c1.jpg", 
-            "https://dn-coding-net-production-pp.qbox.me/8f0ada95-fa8e-41a0-a6cf-a3d54dfd29fb.jpg",
-            "https://dn-coding-net-production-pp.qbox.me/8f0ada95-fa8e-41a0-a6cf-a3d54dfd29fb.jpg"],
+            bgImg: ["https://dn-coding-net-production-pp.qbox.me/d96a4494-5fe7-4417-9ff4-bf9fdb5714cd.jpg", "https://dn-coding-net-production-pp.qbox.me/8f0ada95-fa8e-41a0-a6cf-a3d54dfd29fb.jpg", "https://dn-coding-net-production-pp.qbox.me/43b04f6d-090f-419e-82d4-bd9fc0c9b2aa.jpg", "https://dn-coding-net-production-pp.qbox.me/2720527c-3c7f-4851-9269-41b910dd3ba8.jpg", "https://dn-coding-net-production-pp.qbox.me/a2bf66ed-7221-47b2-becb-9b7544353522.jpg", "https://dn-coding-net-production-pp.qbox.me/3f90e634-4738-435b-b654-303bff9eb2c9.jpg", "https://dn-coding-net-production-pp.qbox.me/a1649947-a5ac-4a9a-97a2-e030344f6e25.jpg", "https://dn-coding-net-production-pp.qbox.me/a1ec70b9-7a44-4485-8541-056c14af6c43.jpg", "https://dn-coding-net-production-pp.qbox.me/f0b596a6-b3d8-4cff-95fb-a3f21dbcd833.jpg", "https://dn-coding-net-production-pp.qbox.me/44815347-b667-4ef0-bacd-5d971ed524e1.jpg"],
             bgOptions: {
                 duration: 1e4,
                 fade: 1e3,
@@ -22117,10 +22114,10 @@ function(e, t, n) {
         playerType: "file",
         playListId: "",
         playList: [{
-            name: "\u7ea2\u662d\u613f",
-            author: "\u97f3\u9619\u8bd7\u542c",
+            name: "\u3046\u305f\u304b\u305f\u306e\u98ce\u3068\u8749\u65f6\u96e8",
+            author: "Little Planet",
             src: "https://p1.music.126.net/24NNCkr1YPZYj3PGHjmQhg==/2051688697442345.mp3",
-            cover: "https://pic.xiami.net/images/album/img5/426705/4267051488426705.jpg?x-oss-process=image/resize,limit_0,m_pad,w_600,h_600"
+            cover: "https://dn-coding-net-production-pp.qbox.me/b706547f-9237-48fb-ace9-89f9506ab099.jpg"
         },
         {
             name: "\u6625\u306e\u51d1\u306b ~ Lost shiners",
@@ -22129,7 +22126,7 @@ function(e, t, n) {
             cover: "https://dn-coding-net-production-pp.qbox.me/8fc9411a-4566-417c-8c7c-ea9d9b2bba2e.jpg"
         },
         {
-            name: "\u590f\u9633\u708e",
+            name: "\u590f\u9633",
             author: "\u5929\u5a01\u68a6\u65b9",
             src: "https://p2.music.126.net/XwV3rg9JyE3fT_6MJ6O1Lw==/7839517907200525.mp3",
             cover: "https://dn-coding-net-production-pp.qbox.me/8ba4d0d1-b717-4506-bae7-ba511efabf9b.jpg"
@@ -22195,7 +22192,7 @@ function(e, t, n) {
             tips: "",
             lightbulb: !1,
             likeTime: 0,
-            likeChanshiyu: !0
+            likeChanshiyu: !1
         },
         reducers: {
             update: function(e, t) {
@@ -22990,8 +22987,8 @@ function(e, t, n) {
     }), $e = he()(He, {
         href: "/"
     },
-    void 0, "\u542c\u96ea\u6b4c"), Qe = he()(We, {},
-    void 0, "\u5df2\u8fc7\u5c18\u70df \u7a7a\u5ff5\u660e\u671d"), Je = he()("i", {
+    void 0, "\u8749\u6642\u96e8"), Qe = he()(We, {},
+    void 0, "\u8749\u9e23\u5982\u96e8 \u82b1\u5bb5\u9053\u4e2d"), Je = he()("i", {
         className: "fa fa-university",
         "aria-hidden": "true"
     }), Xe = he()("span", {},
@@ -23157,21 +23154,21 @@ function(e, t, n) {
     }
     var on = Object(be.b)(kt, Zt),
     an = {
-        backHome: "\u70b9\u6211\u56de\u9996\u9875\u770b\u770b\u5427",
-        dressup: "\u4f60\u7684\u5fc3\u4e2d \u662f\u5426\u4e5f\u4f4f\u7740\u4e00\u4e2a\u4eba\uff1f",
-        takePhoto: "\u4e0e\u541b\u521d\u76f8\u8bc6 \u72b9\u5982\u6545\u4eba\u5f52",
-        talk: "\u6d6e\u751f\u5025\u506c \u6709\u7f18\u840d\u805a \u5f53\u6d6e\u4e00\u5927\u767d",
-        lightbulb: "\u5f80\u4e8b\u83ab\u8ffd\u6211\u4e86\u89e3 \u6211\u7b49\u65f6\u95f4\u60ed\u6127",
+        backHome: "\u56de\u9996\u9875\u770b\u770b\u5427 o(*\uffe3\u25bd\uffe3*)\u30d6",
+        dressup: "\u8981\u770b\u770b\u6211\u7684\u65b0\u8863\u670d\u561b (\u25cf'\u25e1'\u25cf)",
+        takePhoto: "\u8981\u7ed9\u6211\u62cd\u5f20\u7167\u561b\uff08<\u309d\u03c9\u30fb\uff09\u2606",
+        talk: "\u8981\u542c\u6211\u8bb2\u6545\u4e8b\u4e48 \u0e05\u25cf\u03c9\u25cf\u0e05",
+        lightbulb: "\u6df1\u591c\u6ce8\u610f\u7231\u62a4\u773c\u775b\u54e6 (\u272a\u03c9\u272a)",
         info: "\u8981\u4e86\u89e3\u66f4\u591a\u5173\u4e8e\u6211\u7684\u6545\u4e8b\u4e48 (*\xb4\u2200`)~\u2665",
-        hidden: "\u5230\u4e86\u8bf4\u518d\u89c1\u7684\u65f6\u5019\u4e86\u4e48",
-        music: "\u5728\u4e0b\u7684\u6b4c\u5355 \u53ef\u5408\u4f60\u5fc3\u610f\uff1f",
-        scroll: "\u8fd9\u662f\u4e2a\u795e\u5947\u7684\u6eda\u52a8\u6761\u54e6"
+        hidden: "\u5230\u4e86\u8bf4\u518d\u89c1\u7684\u65f6\u5019\u4e86\u4e48 (\uff61\u014f_\u014f)",
+        music: "\u6765\u542c\u542c\u6b4c\u5427 \u266a(^\u2207^*)",
+        scroll: "\u5530\u5730\u4e00\u4e0b\u5c31\u8dd1\u4e0a\u9762\u53bb\u4e86\u54e6 ( \u2022 \u0300\u03c9\u2022\u0301 )"
     },
     sn = {
-        dressup: "\u4f60\u7684\u5fc3\u4e2d \u662f\u5426\u4e5f\u4f4f\u7740\u4e00\u4e2a\u4eba\uff1f",
-        takePhoto: "\u5929\u6daf\u660e\u6708\u65b0 \u671d\u66ae\u6700\u76f8\u601d",
-        lightbulb: "\u4eca\u65e5\u4e3a\u541b\u6b4c\u4e00\u66f2 \u6682\u51ed\u676f\u9152\u957f\u7cbe\u795e",
-        hidden: "\u4eba\u751f\u82e5\u53ea\u5982\u521d\u89c1\uff0c\u548c\u4f60\u5728\u4e00\u8d77\u7684\u8fd9\u6bb5\u65f6\u95f4\u5f88\u5f00\u5fc3"
+        dressup: "\u6211\u7684\u65b0\u8863\u670d\u6f02\u4eae\u4e48 (\u25cf'\u25e1'\u25cf)",
+        takePhoto: "\u6211\u7684\u7167\u7247\u8981\u597d\u597d\u6536\u85cf\u54e6\uff08<\u309d\u03c9\u30fb\uff09\u2606",
+        lightbulb: "\u4e00\u8d77\u6765\u505a\u773c\u4fdd\u5065\u64cd\u5427 (\uff89\u25d5\u2200\u25d5)\uff89*:\uff65\uff9f\u2727",
+        hidden: "\u4eba\u751f\u82e5\u53ea\u5982\u521d\u89c1\uff0c\u548c\u4f60\u5728\u4e00\u8d77\u7684\u8fd9\u6bb5\u65f6\u95f4\u5f88\u5f00\u5fc3 (\u25b0\u02d8\u25e1\u02d8\u25b0)"
     },
     un = be.a.div(Et,
     function(e) {
@@ -23291,18 +23288,18 @@ function(e, t, n) {
         className: "fa fa-copyright",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "2018")), he()(bn, {},
+    void 0, "2017 - 2018")), he()(bn, {},
     void 0, he()("i", {
         className: "fa fa-heartbeat",
         "aria-hidden": "true"
     }), he()("span", {},
-    void 0, "\u542c\u96ea\u6b4c"))), he()(yn, {},
+    void 0, "\u8749\u6642\u96e8"))), he()(yn, {},
     void 0, he()(bn, {},
     void 0, he()("p", {},
-    void 0, "Zhihu - ", he()("a", {
-        href: "https://www.zhihu.com/people/ting-xue-ge/activities"
+    void 0, "Theme - ", he()("a", {
+        href: "https://github.com/chanshiyucx/SPA-Blog"
     },
-    void 0, "HomePage"))), "|", he()(bn, {},
+    void 0, "HeartBeat"))), "|", he()(bn, {},
     void 0, he()("p", {},
     void 0, "Hosted by ", he()("a", {
         href: "https://pages.coding.me"
@@ -23459,7 +23456,7 @@ function(e, t, n) {
                     initLoad: !0
                 }),
                 this.showTips({
-                    initTips: "\u6b22\u8fce\u6765\u5230<font color=#3333ff> \u542c\u96ea\u6b4c </font>\u5bd2\u820d\u7b80\u964b \u541b\u8bf7\u81ea\u4fbf"
+                    initTips: "\u6b22\u8fce\u6765\u5230<font color=#f6f> \u8749\u6642\u96e8 </font>\uff0c\u4eca\u5929\u4e5f\u8981\u5143\u6c14\u6ee1\u6ee1\u54e6\uff01"
                 }),
                 window.$("body").backstretch(qt.bgImg, qt.bgOptions),
                 this.skPlayer = new _t.a({
