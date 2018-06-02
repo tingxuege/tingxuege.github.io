@@ -21985,7 +21985,7 @@ function(e, t, n) {
         value: !0
     });
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
-        title: "\u8749\u6642",
+        title: "\u8749\u6642\u96e8",
         subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
         posts: "https://api.github.com/repos/tingxuege/repo",
         pages: "https://api.github.com/repos/tingxuege/shuoshuo",
@@ -22189,7 +22189,7 @@ function(e, t, n) {
             showTop: !1,
             showPlayer: !1,
             isPlaying: !1,
-            showWaifu: !1,
+            showWaifu: !0,
             waifu: "tia",
             updatedAt: "",
             tips: "",
