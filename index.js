@@ -22189,7 +22189,7 @@ function(e, t, n) {
             showTop: !1,
             showPlayer: !1,
             isPlaying: !1,
-            showWaifu: !0,
+            showWaifu: !1,
             waifu: "tia",
             updatedAt: "",
             tips: "",
