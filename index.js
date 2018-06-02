@@ -22195,7 +22195,7 @@ function(e, t, n) {
             tips: "",
             lightbulb: !1,
             likeTime: 0,
-            likeChanshiyu: !1
+            likeChanshiyu: !0
         },
         reducers: {
             update: function(e, t) {
