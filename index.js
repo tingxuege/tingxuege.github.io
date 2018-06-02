@@ -21985,8 +21985,8 @@ function(e, t, n) {
         value: !0
     });
     for (var O = n(14), C = n.n(O), S = n(283), A = n.n(S), T = n(34), P = n(155), N = n.n(P), j = (n(287), n(288), n(54)), M = n.n(j), I = n(9), R = n.n(I), L = n(111), D = n.n(L), U = n(314), F = n.n(U), q = n(315), B = n.n(q), z = {
-        title: "\u542c\u96ea\u6b4c",
-        subtitle: "\u5df2\u8fc7\u5c18\u70df \u7a7a\u5ff5\u660e\u671d",
+        title: "\u8749\u6642\u96e8",
+        subtitle: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d",
         posts: "https://api.github.com/repos/chanshiyucx/BlogPosts",
         pages: "https://api.github.com/repos/chanshiyucx/BlogPages",
         pre: "0ad1a0539c5b96fd18fa",
@@ -22005,13 +22005,13 @@ function(e, t, n) {
             appKey: "avh1gAX4lKkcQQMa1EReztCt"
         },
         qoutes: {
-            archives: "\u6587\u7ae0\u5343\u53e4\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
+            archives: "\u6587\u7ae0\u5343\u53e4\u4e8b\uff0c\u5f97\u5931\u5bf8\u5fc3\u77e5",
             categories: "\u884c\u4e91\u6d41\u6c34\uff0c\u843d\u7b14\u751f\u82b1",
             tags: "\u5217\u5352\u5468\u531d\uff0c\u661f\u7f57\u4e91\u5e03",
             books: "\u543e\u751f\u4e5f\u6709\u6daf\uff0c\u800c\u77e5\u4e5f\u65e0\u6daf",
             shuoshuo: "\u6b32\u8a00\u53c8\u6b62\uff0c\u6b62\u8a00\u53c8\u6b32",
             friends: "\u83ab\u6101\u524d\u8def\u65e0\u77e5\u5df1\uff0c\u5929\u4e0b\u8c01\u4eba\u4e0d\u8bc6\u541b",
-            about: "\u5df2\u8fc7\u5c18\u70df\uff0c\u7a7a\u5ff5\u660e\u671d"
+            about: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d"
         },
         catsInfo: [{
             name: "\u4e8b\u4ef6\u7c3f",
@@ -22061,19 +22061,19 @@ function(e, t, n) {
             avatar: "https://dn-coding-net-production-pp.qbox.me/2af1a90f-4b60-4abd-a7b3-a64a903aa921.png",
             info: [{
                 icon: "user",
-                text: "\u542c\u96ea\u6b4c"
+                text: "\u8749\u6642\u96e8"
             },
             {
                 icon: "envira",
-                text: "\u5df2\u8fc7\u5c18\u70df\uff0c\u7a7a\u5ff5\u660e\u671d"
+                text: "\u8749\u9e23\u5982\u96e8\uff0c\u82b1\u5bb5\u9053\u4e2d"
             },
             {
                 icon: "university",
-                text: "Zhejiang University"
+                text: "University of Electronic Science and Technology of China (UESTC)"
             },
             {
                 icon: "graduation-cap",
-                text: "Software Engineering"
+                text: "Communication&Information Engineering"
             }]
         },
         reward: [{
@@ -22126,7 +22126,7 @@ function(e, t, n) {
             cover: "https://dn-coding-net-production-pp.qbox.me/8fc9411a-4566-417c-8c7c-ea9d9b2bba2e.jpg"
         },
         {
-            name: "\u590f\u9633",
+            name: "\u590f\u9633\u708e",
             author: "\u5929\u5a01\u68a6\u65b9",
             src: "https://p2.music.126.net/XwV3rg9JyE3fT_6MJ6O1Lw==/7839517907200525.mp3",
             cover: "https://dn-coding-net-production-pp.qbox.me/8ba4d0d1-b717-4506-bae7-ba511efabf9b.jpg"
