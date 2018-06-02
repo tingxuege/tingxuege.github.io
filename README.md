@@ -1,3 +1,0 @@
-# tingxuege.github.io
-init
-update constantly……
